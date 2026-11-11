@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#93ccff", "tertiary-fixed": "#cce5ff", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "surface-container-high": "#e2e7ff", "surface-container-low": "#f2f3ff", "on-tertiary-fixed-variant": "#004b73", "on-primary-fixed-variant": "#003ea8", "inverse-on-surface": "#eef0ff", "surface-variant": "#dae2fd", "on-primary-container": "#eeefff", "outline": "#737686", "on-primary": "#ffffff", "surface-dim": "#d2d9f4", "primary-fixed-dim": "#b4c5ff", "surface-container": "#eaedff", "on-primary-fixed": "#00174b", "on-secondary-container": "#00714d", "surface-bright": "#faf8ff", "secondary": "#006c49", "on-secondary-fixed-variant": "#005236", "on-surface": "#131b2e", "primary-container": "#2563eb", "secondary-container": "#6cf8bb", "primary-fixed": "#dbe1ff", "surface-container-highest": "#dae2fd", "surface-container-lowest": "#ffffff", "primary": "#004ac6", "outline-variant": "#c3c6d7", "secondary-fixed-dim": "#4edea3", "on-secondary": "#ffffff", "surface-tint": "#0053db", "tertiary-container": "#0073ae", "tertiary": "#005a89", "on-background": "#131b2e", "error": "#ba1a1a", "background": "#faf8ff", "on-tertiary-fixed": "#001d31", "on-error-container": "#93000a", "on-tertiary-container": "#e7f2ff", "inverse-primary": "#b4c5ff", "on-secondary-fixed": "#002113", "on-surface-variant": "#434655", "inverse-surface": "#283044", "secondary-fixed": "#6ffbbe", "on-error": "#ffffff", "surface": "#faf8ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "margin-desktop": "3rem", "space-xl": "2rem", "margin": "1rem", "margin-tablet": "2rem", "space-lg": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1rem" }, "fontFamily": { "display-sm": ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"], "headline-sm": ["Inter"], "body-sm": ["Inter"], "label-lg": ["Inter"], "headline-lg": ["Inter"], "headline-md": ["Inter"], "headline-xl-mobile": ["Inter"], "headline-xl": ["Inter"], "label-sm": ["Inter"], "display-lg": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "display-sm": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "body-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.025em", "fontWeight": "500" }], "display-lg": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="NusaPresence Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCD6zE185OIMbswdrhT63iZD2ZJp2vEi8rRBuSs0-gKGDkIjt-_3BfCaDPGN_U7gECRZIY-3ue_daXt0dRYcuOlrawGI77G5KC6Rbqxsu0dB9MBOSNpqU6UQbE0K-lxRntSuy8sWvRHXUrHDazGfm0kndJrBg0ggvoem0wKKOeEOaWuuVqgWOsS0RrtNFEe4pi7Di2LE05P22RMdjpcKK3g8KDaEyksT8bf_dVWCYxv"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">NusaPresence</span></div><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant">Beranda</span><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXgf-NDEKJbDq4-yTYOxVvCIiFO9SFLiwXEu0V2EyMxcli40E3vgwMRO5pPgWiNfDV7cPVZwown7dQLaQLEEriSaPMbIHEQCEAL8T8c3DvlE0zm8Fd8NgfHNNSxekGPSL4cAx_uC7xq-VpIGSKzTdbll_i33G2XOHNUJPOIqovrAJz27h9fevYZFodasz-CmoQureH6SLgNgNdRnNDxngbnGaF46TVZnDNpCst5K0F"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full px-margin pb-6 gap-space-lg">
+<!-- Top Bar & Employee Profile Glance -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img alt="Foto Profil Dimas Prasetya" class="w-12 h-12 rounded-full object-cover shadow-sm bg-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXgf-NDEKJbDq4-yTYOxVvCIiFO9SFLiwXEu0V2EyMxcli40E3vgwMRO5pPgWiNfDV7cPVZwown7dQLaQLEEriSaPMbIHEQCEAL8T8c3DvlE0zm8Fd8NgfHNNSxekGPSL4cAx_uC7xq-VpIGSKzTdbll_i33G2XOHNUJPOIqovrAJz27h9fevYZFodasz-CmoQureH6SLgNgNdRnNDxngbnGaF46TVZnDNpCst5K0F"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-secondary rounded-full ring-2 ring-surface"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Selamat Pagi, Dimas!</h1>
+<span class="text-base select-none">👋</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm truncate">
+            Karyawan Tetap • Divisi IT
+          </span>
+</div>
+</div>
+</div>
+<!-- Notification Action Button -->
+<button aria-label="Notifikasi" class="relative p-2.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm active:scale-95 transition-transform flex items-center justify-center shrink-0" type="button">
+<span class="material-symbols-outlined text-[22px]">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span>
+</button>
+</div>
+<!-- Weekly Horizontal Calendar Strip -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Pekan Ini • 17 - 23 Nov 2026</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-0.5">
+        Bulan Nov
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</span>
+</div>
+<div class="flex items-center justify-between gap-1.5 overflow-x-auto py-1">
+<!-- Senin 17 -->
+<div class="flex flex-col items-center justify-center flex-1 py-2 px-1 rounded-2xl bg-surface-container-lowest shadow-sm text-center">
+<span class="font-label-sm text-label-sm text-outline">Sen</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1">17</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-1"></span>
+</div>
+<!-- Selasa 18 -->
+<div class="flex flex-col items-center justify-center flex-1 py-2 px-1 rounded-2xl bg-surface-container-lowest shadow-sm text-center">
+<span class="font-label-sm text-label-sm text-outline">Sel</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1">18</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-1"></span>
+</div>
+<!-- Rabu 19 (Today Active Highlighted Pill) -->
+<div class="flex flex-col items-center justify-center flex-1 py-2 px-1 rounded-2xl bg-primary-container text-on-primary shadow-md text-center scale-105 transform">
+<span class="font-label-sm text-label-sm text-primary-fixed">Rab</span>
+<span class="font-headline-sm text-headline-sm text-on-primary mt-1 font-bold">19</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-1 animate-pulse"></span>
+</div>
+<!-- Kamis 20 -->
+<div class="flex flex-col items-center justify-center flex-1 py-2 px-1 rounded-2xl bg-surface-container-lowest shadow-sm text-center">
+<span class="font-label-sm text-label-sm text-outline">Kam</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1">20</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mt-1"></span>
+</div>
+<!-- Jumat 21 -->
+<div class="flex flex-col items-center justify-center flex-1 py-2 px-1 rounded-2xl bg-surface-container-lowest shadow-sm text-center">
+<span class="font-label-sm text-label-sm text-outline">Jum</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1">21</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mt-1"></span>
+</div>
+<!-- Sabtu 22 -->
+<div class="flex flex-col items-center justify-center flex-1 py-2 px-1 rounded-2xl bg-surface-container-low/60 shadow-none text-center opacity-70">
+<span class="font-label-sm text-label-sm text-outline">Sab</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant mt-1">22</span>
+<span class="w-1.5 h-1.5 rounded-full bg-transparent mt-1"></span>
+</div>
+<!-- Minggu 23 -->
+<div class="flex flex-col items-center justify-center flex-1 py-2 px-1 rounded-2xl bg-surface-container-low/60 shadow-none text-center opacity-70">
+<span class="font-label-sm text-label-sm text-outline">Min</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant mt-1">23</span>
+<span class="w-1.5 h-1.5 rounded-full bg-transparent mt-1"></span>
+</div>
+</div>
+</div>
+<!-- Attendance Stats Grid (2x2) -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Card 1: Jam Masuk -->
+<div class="flex flex-col justify-between p-4 rounded-[20px] bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Jam Masuk</span>
+<div class="w-7 h-7 rounded-full bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+</div>
+</div>
+<div>
+<div class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-bold">07:58 <span class="font-label-sm text-label-sm text-outline font-normal">WIB</span></div>
+<div class="inline-flex items-center gap-1 mt-2 px-2 py-0.5 rounded-full bg-secondary-fixed/30 text-on-secondary-container font-label-sm text-label-sm">
+<span>✓</span>
+<span>Hadir Tepat Waktu</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Jam Pulang -->
+<div class="flex flex-col justify-between p-4 rounded-[20px] bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Jam Pulang</span>
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[16px]">logout</span>
+</div>
+</div>
+<div>
+<div class="font-headline-xl-mobile text-headline-xl-mobile text-outline-variant font-bold">-- : --</div>
+<div class="inline-flex items-center gap-1 mt-2 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span>Belum Absen Pulang</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Jarak Kantor (Geofence) -->
+<div class="flex flex-col justify-between p-4 rounded-[20px] bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Jarak Kantor</span>
+<div class="relative flex items-center justify-center w-7 h-7 rounded-full bg-secondary-fixed/40 text-secondary">
+<span class="material-symbols-outlined text-[16px]">near_me</span>
+<span class="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+</div>
+</div>
+<div>
+<div class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-bold">14 <span class="font-label-sm text-label-sm text-outline font-normal">meter</span></div>
+<div class="inline-flex items-center gap-1 mt-2 px-2 py-0.5 rounded-full bg-secondary-fixed/30 text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>✓ Dalam Radius</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Jam Kerja Hari Ini -->
+<div class="flex flex-col justify-between p-4 rounded-[20px] bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Shift Kerja</span>
+<div class="w-7 h-7 rounded-full bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">timelapse</span>
+</div>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">08:00 - 17:00</div>
+<!-- Progress bar -->
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 20%;"></div>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1 truncate">
+          7 jam 12 menit tersisa
+        </div>
+</div>
+</div>
+</div>
+<!-- Primary Action Widget: Presensi Kehadiran Hari Ini -->
+<div class="flex flex-col p-5 rounded-[24px] bg-surface-container-lowest shadow-md gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Presensi Kehadiran</h2>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">
+        Presensi Pulang Aktif
+      </span>
+</div>
+<!-- Live GPS & Camera Viewfinder Mini Card -->
+<div class="relative w-full h-32 rounded-2xl overflow-hidden bg-surface-container flex items-center justify-between p-3.5">
+<!-- Background Map Mockup Visual -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center opacity-65" data-location="Menara Astra, Sudirman, Jakarta" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBn5wRazqaXY00EdqU0W6VgtSThYyW6yN6TXc9XBjHzn3dId2ulC-ZyFkh6l6o8Eqtf0in0WDpSkoV_XsAVBh0jfCLxxX2zG612bVuhiXdHLIPh1C_18wSfZCLEQOoPUAHoU9D_uLxFZpJNHxTStx8ubN6hsuofHOiumCTt3xhWz5eedFvbkjEYFVUkUwFjQNkCAAc4kdY8zxjJeUDFI6ZJYIIJiCzgoG2vXhwX_YC')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-dim/90 via-surface-dim/60 to-transparent"></div>
+<!-- In-bounds Badge & Location Data -->
+<div class="relative z-10 flex flex-col justify-between h-full max-w-[65%]">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-secondary-container shadow-sm self-start">
+<span class="material-symbols-outlined text-[14px] text-secondary">location_on</span>
+<span class="font-label-sm text-label-sm font-semibold">HQ Tower Lt. 14</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Akurasi GPS ± 3 meter</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Terverifikasi via Wi-Fi NusaNet</span>
+</div>
+</div>
+<!-- Biometric Camera Verification Status Pill -->
+<div class="relative z-10 flex flex-col items-center justify-center w-20 h-20 rounded-2xl bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<div class="relative flex items-center justify-center">
+<span class="material-symbols-outlined text-[30px] text-primary">face</span>
+<span class="absolute -top-1 -right-1 flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold mt-1">Swafoto Siap</span>
+</div>
+</div>
+<!-- Interactive Swipe / Touch Action Bar for Clock-Out -->
+<div class="relative w-full h-14 bg-surface-container rounded-full p-1 flex items-center select-none overflow-hidden touch-pan-x cursor-pointer" id="swipe-track">
+<div class="absolute left-1 top-1 bottom-1 w-12 h-12 bg-primary-container text-on-primary rounded-full flex items-center justify-center shadow-md transition-transform duration-100 ease-out z-20" id="swipe-thumb">
+<span class="material-symbols-outlined text-[24px]" id="swipe-icon">arrow_forward</span>
+</div>
+<div class="w-full text-center pr-2 pl-12 z-10 pointer-events-none">
+<span class="font-label-lg text-label-lg text-on-surface-variant tracking-wide font-semibold">Geser untuk Absen Pulang</span>
+</div>
+<div class="absolute left-0 top-0 bottom-0 bg-primary/20 rounded-full w-0 transition-all duration-100 pointer-events-none" id="swipe-progress-fill"></div>
+</div>
+<!-- Secondary Quick Actions -->
+<div class="grid grid-cols-3 gap-2.5 pt-1">
+<button class="flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all text-center" type="button">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary mb-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">edit_calendar</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Izin / Cuti</span>
+</button>
+<button class="flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all text-center" type="button">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary mb-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">sync_alt</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Tukar Shift</span>
+</button>
+<button class="flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all text-center" type="button">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Slip Gaji</span>
+</button>
+</div>
+</div>
+<!-- Activity Timeline Feed Card -->
+<div class="flex flex-col p-4 rounded-[20px] bg-surface-container-lowest shadow-sm gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold tracking-wide">AKTIVITAS TERKINI</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Lihat Semua</span>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed/40 flex items-center justify-center text-secondary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="font-body-sm text-body-sm text-on-surface">
+<span class="font-semibold">Presensi Masuk</span> terverifikasi di Kantor Pusat Jakarta (Radius 14m).
+        </div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-outline">Hari ini • 07:58:24 WIB</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Swafoto Valid</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initSwipe() {
+    const track = document.getElementById('swipe-track');
+    const thumb = document.getElementById('swipe-thumb');
+    const icon = document.getElementById('swipe-icon');
+    const fill = document.getElementById('swipe-progress-fill');
+    if (!track || !thumb || !icon) return;
+
+    let isDragging = false;
+    let startX = 0;
+    let maxDistance = 0;
+
+    function updateBounds() {
+      maxDistance = track.clientWidth - thumb.clientWidth - 8;
+    }
+
+    window.addEventListener('resize', updateBounds);
+    updateBounds();
+
+    function onStart(e) {
+      isDragging = true;
+      updateBounds();
+      startX = (e.touches ? e.touches[0].clientX : e.clientX);
+      thumb.style.transition = 'none';
+      if (fill) fill.style.transition = 'none';
+    }
+
+    function onMove(e) {
+      if (!isDragging) return;
+      const currentX = (e.touches ? e.touches[0].clientX : e.clientX);
+      let diff = currentX - startX;
+      if (diff < 0) diff = 0;
+      if (diff > maxDistance) diff = maxDistance;
+
+      thumb.style.transform = `translateX(${diff}px)`;
+      if (fill) fill.style.width = `${diff + thumb.clientWidth}px`;
+
+      if (diff >= maxDistance * 0.9) {
+        thumb.classList.add('bg-secondary');
+        thumb.classList.remove('bg-primary-container');
+        icon.innerText = 'check';
+      } else {
+        thumb.classList.add('bg-primary-container');
+        thumb.classList.remove('bg-secondary');
+        icon.innerText = 'arrow_forward';
+      }
+    }
+
+    function onEnd() {
+      if (!isDragging) return;
+      isDragging = false;
+      const currentTransform = thumb.style.transform;
+      const match = currentTransform.match(/translateX\(([^)]+)px\)/);
+      const currentX = match ? parseFloat(match[1]) : 0;
+
+      if (currentX >= maxDistance * 0.85) {
+        // Successful swipe triggered
+        thumb.style.transition = 'transform 0.2s cubic-bezier(0.16, 1, 0.3, 1)';
+        thumb.style.transform = `translateX(${maxDistance}px)`;
+        if (fill) fill.style.width = `100%`;
+        icon.innerText = 'done_all';
+        setTimeout(() => {
+          alert('Presensi Pulang Berhasil Dicatat! Selamat beristirahat.');
+          thumb.style.transform = 'translateX(0px)';
+          if (fill) fill.style.width = '0px';
+          thumb.classList.add('bg-primary-container');
+          thumb.classList.remove('bg-secondary');
+          icon.innerText = 'arrow_forward';
+        }, 300);
+      } else {
+        // Reset spring animation
+        thumb.style.transition = 'transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)';
+        thumb.style.transform = 'translateX(0px)';
+        if (fill) {
+          fill.style.transition = 'width 0.25s cubic-bezier(0.16, 1, 0.3, 1)';
+          fill.style.width = '0px';
+        }
+        thumb.classList.add('bg-primary-container');
+        thumb.classList.remove('bg-secondary');
+        icon.innerText = 'arrow_forward';
+      }
+    }
+
+    thumb.addEventListener('mousedown', onStart);
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('mouseup', onEnd);
+
+    thumb.addEventListener('touchstart', onStart, { passive: true });
+    window.addEventListener('touchmove', onMove, { passive: true });
+    window.addEventListener('touchend', onEnd);
+  })();
+</script></main><div class="fixed bottom-0 w-full z-50 pb-safe pointer-events-none flex justify-center"><nav class="pointer-events-auto mb-4 mx-4 w-[calc(100%-2rem)] max-w-md h-16 rounded-full bg-surface-container-lowest/85 backdrop-blur-2xl shadow-[0_8px_32px_rgba(19,27,46,0.08)] px-4 flex items-center justify-around" data-active-classes="text-primary bg-primary-fixed/50 font-label-md"><a aria-current="page" class="flex items-center justify-center gap-1.5 px-4 py-2 rounded-full transition-all min-h-[44px] text-primary bg-primary-fixed/50 font-label-md" data-path="beranda" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-md text-label-md">Beranda</span></a><a class="flex items-center justify-center gap-1.5 px-4 py-2 rounded-full text-on-surface-variant hover:text-on-surface transition-all min-h-[44px]" data-path="riwayat" href="#"><span class="material-symbols-outlined text-[22px]">calendar_month</span><span class="font-label-md text-label-md">Riwayat</span></a><a class="flex items-center justify-center gap-1.5 px-4 py-2 rounded-full text-on-surface-variant hover:text-on-surface transition-all min-h-[44px]" data-path="profil" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-md text-label-md">Profil</span></a></nav></div></body></html>
